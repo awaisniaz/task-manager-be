@@ -1,7 +1,8 @@
 import { Sequelize } from "sequelize";
-const sequelize = new Sequelize('database', 'username', 'password', {
+const sequelize = new Sequelize('task-manager', 'root', '', {
     host: 'localhost',
-    dialect: 'mysql'
+    dialect: 'mysql',
+    logging: (...msg) => console.log("I am Awais Niaz"),
 });
 
 
